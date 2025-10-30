@@ -13,7 +13,7 @@ class Type(Enum):
 
 class TypeCalculator:
     def __init__(self):
-        print("Hello from TypeCalculator")
+        self.type_chart = []
 
     def print(self):
-        print("Hello again from TypeCalculator")
+        pass
