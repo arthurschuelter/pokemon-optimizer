@@ -1,8 +1,6 @@
 # --------------------------------------------------------
 from enum import Enum
 
-from type_calculator import TypeCalculator
-
 # --------------------------------------------------------
 
 
@@ -13,12 +11,9 @@ class Type(Enum):
     FIRE = 3
 
 
-def main():
-    this_type = Type.NORMAL
-    print(this_type.name, this_type.value)
-    calc = TypeCalculator()
-    calc.print()
+class TypeCalculator:
+    def __init__(self):
+        print("Hello from TypeCalculator")
 
-
-if __name__ == "__main__":
-    main()
+    def print(self):
+        print("Hello again from TypeCalculator")
